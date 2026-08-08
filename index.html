@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhav S | Portfolio</title>
+<meta name="description" content="Portfolio of Madhav S — Computer Science undergraduate.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#0e1117',
+          card: '#161b24',
+          border: '#2a303c',
+          accent: '#4fd1c5',
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body { background-color: #0e1117; }
+  a, button { transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease; }
+</style>
+</head>
+
+<body class="bg-bg text-slate-200 font-sans">
+
+<!-- NAV -->
+<header class="border-b border-border">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="flex items-center justify-between h-16">
+      <a href="#top" class="font-semibold text-white">Madhav S</a>
+
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-400">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#education" class="hover:text-white">Education</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+
+      <button id="menuBtn" class="sm:hidden text-slate-300 px-2 py-1 border border-border rounded">Menu</button>
+    </div>
+
+    <nav id="mobileMenu" class="hidden sm:hidden flex-col gap-1 pb-4 text-sm text-slate-400">
+      <a href="#about" class="block py-1.5">About</a>
+      <a href="#skills" class="block py-1.5">Skills</a>
+      <a href="#projects" class="block py-1.5">Projects</a>
+      <a href="#education" class="block py-1.5">Education</a>
+      <a href="#contact" class="block py-1.5">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="max-w-3xl mx-auto px-6 pt-16 pb-14">
+  <p class="text-accent text-sm font-medium mb-3">Hi, I'm</p>
+  <h1 class="text-3xl sm:text-4xl font-bold text-white">Madhav S</h1>
+  <p class="mt-2 text-slate-300">
+    Computer Science Undergraduate (2nd Year) &middot; AI Enthusiast &amp; Full-Stack Developer
+  </p>
+  <p class="mt-1 text-slate-500 text-sm">Chennai, India</p>
+  <p class="mt-4 text-slate-400 max-w-xl leading-relaxed">
+    2nd-year CS Core student at SRMIST, building a foundation in Data Structures,
+    Software Engineering, and AI/Data Science. I like building working full-stack
+    apps, small security tools, and practical AI projects. Currently looking for
+    software engineering and AI internships.
+  </p>
+
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="#projects" class="px-4 py-2 rounded-md bg-accent text-bg font-medium text-sm hover:opacity-90">
+      Explore Projects
+    </a>
+    <a href="#contact" class="px-4 py-2 rounded-md border border-border text-sm font-medium hover:border-slate-500">
+      Get in Touch
+    </a>
+    <a href="resume.pdf" download class="px-4 py-2 rounded-md border border-border text-sm font-medium hover:border-slate-500">
+      Download Resume
+    </a>
+  </div>
+
+  <div class="mt-8 flex items-center gap-4 text-sm text-slate-400">
+    <a href="https://github.com/madhavsukumar" target="_blank" class="hover:text-white">GitHub</a>
+    <span class="text-slate-700">&middot;</span>
+    <a href="https://www.linkedin.com/in/madhavsukumar" target="_blank" class="hover:text-white">LinkedIn</a>
+    <span class="text-slate-700">&middot;</span>
+    <a href="tel:+919600240850" class="hover:text-white">+91 9600240850</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="border-t border-border">
+  <div class="max-w-3xl mx-auto px-6 py-14">
+    <h2 class="text-xl font-semibold text-white mb-4">About Me</h2>
+    <p class="text-slate-300 leading-relaxed">
+      I'm a second-year Computer Science student at SRM Institute of Science and
+      Technology. Over the last year I've worked on a mix of projects — from
+      C++ systems programming to full-stack web apps and small AI tools — mostly
+      to learn by building rather than just reading about it.
+    </p>
+    <p class="mt-4 text-slate-400 leading-relaxed">
+      Right now I'm focused on getting better at full-stack development and
+      applied AI, and I'm looking for internships where I can keep learning on
+      a real product.
+    </p>
+
+    <div class="mt-6 grid sm:grid-cols-3 gap-3">
+      <div class="border border-border rounded-md p-3">
+        <p class="text-white text-sm font-medium">Full-Stack Dev</p>
+        <p class="text-slate-500 text-xs mt-1">Web apps, REST APIs</p>
+      </div>
+      <div class="border border-border rounded-md p-3">
+        <p class="text-white text-sm font-medium">AI &amp; Data</p>
+        <p class="text-slate-500 text-xs mt-1">ML fundamentals, GenAI</p>
+      </div>
+      <div class="border border-border rounded-md p-3">
+        <p class="text-white text-sm font-medium">Systems &amp; Security</p>
+        <p class="text-slate-500 text-xs mt-1">DSA, OOP, secure design</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="border-t border-border">
+  <div class="max-w-3xl mx-auto px-6 py-14">
+    <h2 class="text-xl font-semibold text-white mb-6">Skills</h2>
+
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-sm font-medium text-slate-400 mb-2">Languages</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-sm border border-border px-3 py-1 rounded-md">C</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">C++</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">Java</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">Python</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">JavaScript</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-medium text-slate-400 mb-2">Web &amp; Tools</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-sm border border-border px-3 py-1 rounded-md">HTML/CSS</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">REST APIs</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">Git &amp; GitHub</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">VS Code</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">Vercel</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">Netlify</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-medium text-slate-400 mb-2">Core CS &amp; AI</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-sm border border-border px-3 py-1 rounded-md">DSA</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">OOP</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">UML Design</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">ML Fundamentals</span>
+          <span class="text-sm border border-border px-3 py-1 rounded-md">GenAI Prompting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="border-t border-border">
+  <div class="max-w-3xl mx-auto px-6 py-14">
+    <h2 class="text-xl font-semibold text-white mb-6">Featured Projects</h2>
+
+    <div class="space-y-4">
+
+      <article class="border border-border rounded-md p-5">
+        <h3 class="font-semibold text-white">EcoTrack AI</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          An AI-assisted platform that calculates and tracks personal carbon
+          footprints, and gives simple sustainability suggestions based on usage.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">Web Tech</span>
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">Python / AI Logic</span>
+        </div>
+        <div class="flex gap-4 mt-3 text-sm">
+          <a href="#" class="text-accent hover:underline">GitHub</a>
+          <a href="#" class="text-accent hover:underline">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="border border-border rounded-md p-5">
+        <h3 class="font-semibold text-white">Secure File Steganography Vault</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          A security tool that hides sensitive data inside ordinary files
+          (steganography) and encrypts it for extra protection.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">C++ / Python</span>
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">Security Algorithms</span>
+        </div>
+        <div class="flex gap-4 mt-3 text-sm">
+          <a href="#" class="text-accent hover:underline">GitHub</a>
+          <a href="#" class="text-accent hover:underline">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="border border-border rounded-md p-5">
+        <h3 class="font-semibold text-white">Persistent Library Management System</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          A backend system using OOP principles and C++ file handling to keep
+          track of books and transactions, with data that persists between runs.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">C++</span>
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">File Systems</span>
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">OOP</span>
+        </div>
+        <div class="flex gap-4 mt-3 text-sm">
+          <a href="#" class="text-accent hover:underline">GitHub</a>
+        </div>
+      </article>
+
+      <article class="border border-border rounded-md p-5">
+        <h3 class="font-semibold text-white">Full-Stack E-Commerce Web App</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          An online shopping interface with product filtering, a dynamic cart,
+          and a clean, simple layout.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">JavaScript</span>
+          <span class="text-xs border border-border text-slate-400 px-2 py-0.5 rounded">Full-Stack</span>
+        </div>
+        <div class="flex gap-4 mt-3 text-sm">
+          <a href="#" class="text-accent hover:underline">GitHub</a>
+          <a href="#" class="text-accent hover:underline">Live Demo</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="border-t border-border">
+  <div class="max-w-3xl mx-auto px-6 py-14">
+    <h2 class="text-xl font-semibold text-white mb-6">Education &amp; Certifications</h2>
+
+    <div class="space-y-5">
+      <div class="border-l-2 border-border pl-4">
+        <p class="text-xs text-slate-500">2025 — Present</p>
+        <h3 class="font-medium text-white mt-1">B.Tech, Computer Science &amp; Engineering (Core)</h3>
+        <p class="text-slate-400 text-sm mt-1">SRM Institute of Science and Technology (SRMIST), Kattankulathur</p>
+      </div>
+
+      <div class="border-l-2 border-border pl-4">
+        <p class="text-xs text-slate-500">GCI 2026</p>
+        <h3 class="font-medium text-white mt-1">Global AI &amp; Data Science Course</h3>
+        <p class="text-slate-400 text-sm mt-1">The University of Tokyo</p>
+      </div>
+
+      <div class="border-l-2 border-border pl-4">
+        <p class="text-xs text-slate-500">Cohort 2</p>
+        <h3 class="font-medium text-white mt-1">Google Cloud Gen AI Academy</h3>
+        <p class="text-slate-400 text-sm mt-1">Cohort 2 Graduate — Technical Assessment Completed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="border-t border-border">
+  <div class="max-w-3xl mx-auto px-6 py-14">
+    <h2 class="text-xl font-semibold text-white mb-4">Get in Touch</h2>
+    <p class="text-slate-400 mb-6 max-w-md">
+      Open to internships and collaborations — feel free to reach out.
+    </p>
+
+    <div class="space-y-2 mb-8 text-sm">
+      <p><a href="tel:+919600240850" class="text-accent hover:underline">+91 9600240850</a></p>
+      <p><a href="https://github.com/madhavsukumar" target="_blank" class="text-accent hover:underline">github.com/madhavsukumar</a></p>
+      <p><a href="https://www.linkedin.com/in/madhavsukumar" target="_blank" class="text-accent hover:underline">linkedin.com/in/madhavsukumar</a></p>
+    </div>
+
+    <form class="space-y-3 max-w-md" onsubmit="return handleContactSubmit(event)">
+      <div>
+        <label class="block text-sm text-slate-400 mb-1">Name</label>
+        <input type="text" required class="w-full bg-card border border-border rounded-md px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-slate-500">
+      </div>
+      <div>
+        <label class="block text-sm text-slate-400 mb-1">Email</label>
+        <input type="email" required class="w-full bg-card border border-border rounded-md px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-slate-500">
+      </div>
+      <div>
+        <label class="block text-sm text-slate-400 mb-1">Message</label>
+        <textarea rows="4" required class="w-full bg-card border border-border rounded-md px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-slate-500 resize-none"></textarea>
+      </div>
+      <button type="submit" class="px-4 py-2 rounded-md bg-accent text-bg font-medium text-sm hover:opacity-90">
+        Send Message
+      </button>
+      <p id="formNote" class="text-xs text-slate-500"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="border-t border-border">
+  <div class="max-w-3xl mx-auto px-6 py-6 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <p>&copy; 2026 Madhav S.</p>
+    <a href="#top" class="hover:text-slate-300">Back to top</a>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(a =>
+    a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+    })
+  );
+
+  // Contact form — no backend yet, just shows a message.
+  // Replace with a real endpoint (Formspree, EmailJS, your own API) when ready.
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    document.getElementById('formNote').textContent =
+      "Thanks! This form isn't connected to a server yet — email me directly for now.";
+    e.target.reset();
+    return false;
+  }
+</script>
+
+</body>
+</html>
